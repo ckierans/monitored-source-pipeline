@@ -52,7 +52,7 @@ Note that the background binning takes ~7 minutes to run, and I personally had t
 ```
 
 ## Check the results
-The Airflow UI will show the cosidag_source was successful. You can find the results in the ```cosiflow/data/source/``` directory and there should be 8 files produced:
+The Airflow UI will show the cosidag_source was successful. You can find the results in the ```cosiflow/data/source/crab``` directory and there should be 8 files produced:
 1. bin_crab_dc3.yaml
 2. bin_Background_Model.yaml
 3. tsel_unbinned_data_crab_dc3.fits (178 MB)
