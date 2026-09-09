@@ -167,6 +167,6 @@ general_pipeline_config:
   tstop:   
     1838007720
   directory_output:
-    /home/gamma/workspace/data/source
+    /home/gamma/workspace/data/source/crab
   ori_file:
     /home/gamma/workspace/data/obs/2025_01/250101/auxil/DC3_final_530km_3_month_with_slew_1sbins_GalacticEarth_SAA.ori
