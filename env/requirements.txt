@@ -1,0 +1,13 @@
+py7zr
+jupyter
+notebook
+numpy
+scipy
+pandas
+matplotlib
+psutil
+setuptools<65.0.0  # Version includes pkg_resources (required by threeML)
+#-e git+https://github.com/cositools/cosipy.git@v0.3.x#egg=cosipy
+-e git+https://github.com/cositools/cosipy.git@develop#egg=cosipy
+astro-gdt
+git+https://gitlab.com/burstcube/bc-tools.git@develop
