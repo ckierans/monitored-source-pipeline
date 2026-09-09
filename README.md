@@ -41,8 +41,16 @@ The pipeline current has four main tasks:
 3. Spectral fit
 4. Merging fit results into plots
 
-Note that the background binning takes ~7 minutes to run, and I personally had to increase the Docker memory to 64 GB to run 1 month of background binning without it crashing. Check your current memory usage with ```docker stats cosi_airflow``` and increase the allocation in the ```cosiflow/env/docker-compose.yaml``` file (line 161+162). 
- 
+Note that the background binning takes ~7 minutes to run, and I personally had to increase the Docker memory to 64 GB to run 1 month of background binning without it crashing. Check your current memory usage with ```docker stats cosi_airflow``` and increase the allocation in the ```cosiflow/env/docker-compose.yaml``` file (line 114):
+
+```
+  airflow:
+    image: cosiflow-airflow:native
++   mem_limit: 64g          # Add this line
++   memswap_limit: 64g      # Add this line
+    build:
+```
+
 ## Check the results
 The Airflow UI will show the cosidag_source was successful. You can find the results in the ```cosiflow/data/source/``` directory and there should be 8 files produced:
 1. bin_crab_dc3.yaml
